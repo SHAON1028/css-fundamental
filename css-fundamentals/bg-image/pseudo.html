@@ -1,0 +1,93 @@
+note: :colon class, ::colon element
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classs and element</title>
+
+    <!-- scss -->
+
+    <!-- li {
+  // Styles for all ul elements
+  color: blue;
+
+  &:not(:last-child) {
+    // Styles for all ul elements except the last one
+    color: red;
+  }
+} -->
+
+    li:nth-of-type(2){ color: brown; } li:nth-of-type(odd) { color: brown; }
+    li:nth-of-type(even) { color: brown; } li:nth-of-type(2n+1) {
+
+    <!-- n == 0 gunitok 2,4,5 -->
+    color: brown; }
+
+    <!-- **************** important pseudo class**************** -->
+
+    1. :first-of-type 2. :last-of-type 3. :nth-of-type(n) 4.li:not(.last-item){
+    color: green; } :root{ --primary-color:blue; }
+
+    <!-- *********** important pseudo class ******************* -->
+
+    <!-- *********** important pseudo element ******************* -->
+    ::after p::after Insert something after the content of each
+    <p>
+      element ::before p::before Insert something before the content of each
+    </p>
+    <p>
+      element ::first-letter p::first-letter Selects the first letter of each
+    </p>
+    <p>element ::first-line p::first-line Selects the first line of each</p>
+    <p>
+      element ::marker ::marker Selects the markers of list items ::selection
+      p::selection Selects the portion of an element that is selected by a user
+
+      <!-- *********** important pseudo element ******************* -->
+      <style>
+        a {
+          color: red;
+        }
+
+        a:active {
+          color: gold;
+        }
+
+        :root {
+          --primary-color: blue;
+        }
+        /* li:not(:last-child) {
+        color: red;
+      } */
+
+        /* li:nth-child(3){
+        color: blueviolet;
+      } */
+        /* li kon element er koto tomo children */
+        /* li:nth-of-type(2) {
+        color: brown;
+      } */
+        /* nth of type */
+
+        .last-item {
+          color: var(--primary-color);
+        }
+      </style>
+    </p>
+  </head>
+
+  <body>
+    <a href="">Google</a>
+
+    <ul>
+      <p>step child</p>
+      <li>One</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+      <li class="last-item">five</li>
+    </ul>
+  </body>
+</html>

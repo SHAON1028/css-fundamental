@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bg-image</title>
+
+    <!-- .box {
+        width: 800px;
+        height: 800px;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-image: url(./image/images2.jpeg),url(./image/images.jpeg);
+        
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        background-repeat: no-repeat;
+
+        /* ---size--- */
+        /* background-size: 100%;      */
+        /* background size 100% like contain width borabor 100% aspect ratio */
+        /* background-size: cover; */
+        /* background-size: contain; */
+
+        /* contain er fill the full width height might be empty */
+
+        /* ---position--- */
+        /* background-position: center center;
+        background-position: 50px 50px;
+        background-position: top left;
+        /* background-position: top right; */
+        background-attachment: fixed,scroll;
+        background-size: 300px;
+        /* background-position: center center; */
+        background-position:500px top,200px bottom;
+      } -->
+
+    <!-- web site :gradientmagic.com -->
+    <!-- .linear-gradient{ .linear-gradient { width: 800px; height: 800px; margin: 0
+    auto; border: 3px solid black; background-image: linear-gradient( 45deg,
+    rgb(33, 33, 33) 0%, transparent 73% ), repeating-linear-gradient( 90deg,
+    rgba(127, 127, 127, 0.1) 0px, rgba(127, 127, 127, 0.1) 1px, transparent 1px,
+    transparent 17px ), repeating-linear-gradient( 0deg, rgba(127, 127, 127,
+    0.1) 0px, rgba(127, 127, 127, 0.1) 1px, transparent 1px, transparent 17px ),
+    linear-gradient(0deg, rgb(33, 33, 33), rgb(33, 33, 33)); } } -->
+    <style>
+      body {
+        height: 3000px;
+      }
+      .linear-gradient {
+        width: 800px;
+        height: 800px;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-image: linear-gradient(
+            45deg,
+            rgb(33, 33, 33) 0%,
+            transparent 73%
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(127, 127, 127, 0.1) 0px,
+            rgba(127, 127, 127, 0.1) 1px,
+            transparent 1px,
+            transparent 17px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            rgba(127, 127, 127, 0.1) 0px,
+            rgba(127, 127, 127, 0.1) 1px,
+            transparent 1px,
+            transparent 17px
+          ),
+          linear-gradient(0deg, rgb(33, 33, 33), rgb(33, 33, 33));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+
+      <div class="linear-gradient"></div>
+    </div>
+  </body>
+</html>
